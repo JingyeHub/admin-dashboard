@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/* Images stuffs */
+img#logo {
+    width: 100px;
+    height: auto;
+}
+
+img.small {
+    width: 40px;
+    height: 40px;
+}
+
+img.big {
+    width: 60px;
+    height: 60px;
+}
+
+img[src$=".svg"] {
+    width: 25px;
+    height: 25px;
+}
+
+/* Layout Stuffs*/
+
+/* Left */
+#container {
+    display: flex;
+}
+
+#left-sub-container {
+    flex-basis: 20%;
+    display: grid;
+    grid-template-rows: 150px 300px 1fr;
+    padding-left: 10px;
+}
+
+#logo-container {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-container>div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Right */
+#right-sub-container {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+#header>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.header-left {
+    justify-content: space-around;
+    gap: 0;
+}
+
+#main {
+    display: flex;
+}
+
+#main-left {
+    flex-basis: 80%;
+}
+
+#main-right {
+    flex-basis: 20%;
+}
+
+#main-left .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 200px;
+    justify-content: center;
+}
+
+#main-left .grid>div {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.buttons {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+#main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#main-right>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#trending>div {
+    display: flex;
+    gap: 5px;
+}
