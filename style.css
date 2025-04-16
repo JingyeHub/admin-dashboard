@@ -28,6 +28,10 @@ img[src$=".svg"] {
     height: 25px;
 }
 
+img {
+    border-radius: 50%;
+}
+
 /* Layout Stuffs*/
 
 /* Left */
@@ -40,6 +44,9 @@ img[src$=".svg"] {
     display: grid;
     grid-template-rows: 150px 300px 1fr;
     padding-left: 10px;
+    background-color: rgb(164, 202, 226);
+    font-weight: bold;
+    align-items: center;
 }
 
 #logo-container {
@@ -103,6 +110,8 @@ img[src$=".svg"] {
 
 button.blue-bg {
     background-color: rgb(6, 138, 221);
+    color: white;
+    font-weight: 600px;
     width: 70px;
     padding: 5px 10px;
     border: none;
@@ -144,7 +153,7 @@ button.blue-bg {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border-left: 6px solid rgb(206, 22, 120);
-
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .grid div.buttons>button {
@@ -178,6 +187,7 @@ div.buttons {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 5px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #announcements>div:not(:last-child) {
@@ -194,9 +204,15 @@ div.buttons {
 
 
 /* Head tags */
+h1 {
+    font-size: 2rem;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
+    font-weight: bold;
     margin-bottom: 6px;
 }
 
@@ -206,4 +222,8 @@ h4 {
 
 h6 {
     font-size: 1rem;
+}
+
+#left-sub-container p {
+    font-size: 1.2rem;
 }
