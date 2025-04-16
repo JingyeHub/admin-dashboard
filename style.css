@@ -68,7 +68,7 @@ img[src$=".svg"] {
 
 #header {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 #header>div {
@@ -77,10 +77,10 @@ img[src$=".svg"] {
     gap: 10px;
 }
 
-div.header-left {
+/* div.header-left {
     justify-content: space-around;
     gap: 0;
-}
+} */
 
 #main {
     display: flex;
