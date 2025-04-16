@@ -142,7 +142,9 @@ button.blue-bg {
     justify-content: center;
     gap: 20px;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 5px;
+    border-left: 6px solid rgb(206, 22, 120);
+
 }
 
 div.buttons {
@@ -170,7 +172,7 @@ div.buttons {
     gap: 10px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #announcements>div:not(:last-child) {
