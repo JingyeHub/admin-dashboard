@@ -147,6 +147,11 @@ button.blue-bg {
 
 }
 
+.grid div.buttons>button {
+    background-color: inherit;
+    border: none;
+}
+
 div.buttons {
     display: flex;
     gap: 20px;
