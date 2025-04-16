@@ -88,26 +88,29 @@ div.header-left {
 
 #main-left {
     flex-basis: 80%;
+    padding: 20px;
 }
 
 #main-right {
     flex-basis: 20%;
+    padding: 20px;
+
 }
 
 #main-left .grid {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-auto-rows: 200px;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
 }
 
 #main-left .grid>div {
-    width: 300px;
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
 div.buttons {
@@ -131,4 +134,21 @@ div.buttons {
 #trending>div {
     display: flex;
     gap: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
