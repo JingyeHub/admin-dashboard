@@ -44,7 +44,7 @@ img {
     display: grid;
     grid-template-rows: 150px 300px 1fr;
     padding-left: 10px;
-    background-color: rgb(164, 202, 226);
+    background-color: rgb(6, 138, 221);
     font-weight: bold;
     align-items: center;
 }
@@ -110,7 +110,7 @@ img {
 
 button.blue-bg {
     background-color: rgb(6, 138, 221);
-    color: white;
+    /* color: white; */
     font-weight: 600px;
     width: 70px;
     padding: 5px 10px;
