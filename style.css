@@ -9,7 +9,7 @@
 
 /* Images stuffs */
 img#logo {
-    width: 100px;
+    width: 60px;
     height: auto;
 }
 
@@ -98,7 +98,6 @@ div.header-left {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-auto-rows: 200px;
-    justify-content: center;
 }
 
 #main-left .grid>div {
@@ -106,6 +105,9 @@ div.header-left {
     height: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 div.buttons {
